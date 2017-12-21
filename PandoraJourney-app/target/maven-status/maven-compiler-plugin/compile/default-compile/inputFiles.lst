@@ -1,0 +1,7 @@
+/home/juozas/PandoraJourney-app/src/main/java/it/akademija/App.java
+/home/juozas/PandoraJourney-app/src/main/java/it/akademija/DTO/UserDTO.java
+/home/juozas/PandoraJourney-app/src/main/java/it/akademija/Controllers/UserController.java
+/home/juozas/PandoraJourney-app/src/main/java/it/akademija/AppConfig.java
+/home/juozas/PandoraJourney-app/src/main/java/it/akademija/Repository/UserRepo.java
+/home/juozas/PandoraJourney-app/src/main/java/it/akademija/Entity/UserEntity.java
+/home/juozas/PandoraJourney-app/src/main/java/it/akademija/Services/UserService.java

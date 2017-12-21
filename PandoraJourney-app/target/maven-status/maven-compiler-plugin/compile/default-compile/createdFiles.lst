@@ -1,0 +1,8 @@
+it/akademija/Repository/UserRepo.class
+it/akademija/App.class
+it/akademija/AppConfig.class
+it/akademija/Controllers/UserController.class
+it/akademija/Entity/UserEntity.class
+it/akademija/DTO/UserDTO.class
+it/akademija/AppConfig$1.class
+it/akademija/Services/UserService.class
