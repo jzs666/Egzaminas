@@ -38,11 +38,12 @@ public class InstService {
 
 	public void updateInst(InstDTO inst) {
 		Institucija ini = instRepo.findDistinctInstitucijaByPavadinimas(inst.getPav());
-	//	ini = InstDTO.toDTOtoInst(inst)
+		ini = InstDTO.toDTOtoInst(inst);
+		instRepo.save(ini);
 	}
 
 	public InstDTO getInstByName(String name) {
-		return(InstDTO.toDTOtoInst(instRepo.findDistinctInstitucijaByPavadinimas(name)));
+		return(InstDTO.toInstDTO(instRepo.findDistinctInstitucijaByPavadinimas(name)));
 
 	}
 	
