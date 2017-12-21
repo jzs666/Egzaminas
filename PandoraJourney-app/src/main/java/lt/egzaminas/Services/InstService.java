@@ -40,6 +40,11 @@ public class InstService {
 		Institucija ini = instRepo.findDistinctInstitucijaByPavadinimas(inst.getPav());
 	//	ini = InstDTO.toDTOtoInst(inst)
 	}
+
+	public InstDTO getInstByName(String name) {
+		return(InstDTO.toDTOtoInst(instRepo.findDistinctInstitucijaByPavadinimas(name)));
+
+	}
 	
 	
 	

@@ -29,11 +29,11 @@ ReactDOM.render(
       <IndexRoute component={ProductListContainer} />
       <Route path="/institution-list" component={ProductListContainer} />
       <Route path="/institution/:name" component={ProductDetailsContainer} />
-      <Route path={"/cart-details"} component={CartDetailsContainer} />
+      <Route path={"/book-details"} component={CartDetailsContainer} />
       <Route path="/admin" component={Admin} >
         <IndexRoute component={ProductListAdministrationContainer} />
-        <Route path="/books/products/new" component={ProductAdministrationContainer} />
-        <Route path="/books/products/:productId" component={ProductAdministrationContainer} />
+        <Route path="/books/new" component={ProductAdministrationContainer} />
+        <Route path="/books/:productId" component={ProductAdministrationContainer} />
       </Route>
       <Route path="*" component={NoMatch} />
     </Route>

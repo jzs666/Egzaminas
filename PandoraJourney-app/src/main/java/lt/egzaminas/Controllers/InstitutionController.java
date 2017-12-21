@@ -27,6 +27,13 @@ public class InstitutionController {
 	public List<InstDTO> getInstutions() {
 		return instService.getInsts();
 	}
+	
+	@RequestMapping(value = "/")
+	@GetMapping
+	@ApiOperation(value="Get institution details by name",notes="Returns list of institution")
+	public InstDTO getInstutionByName((value="Institucija name",required=true) @Valid @RequestBody final String name) {
+		return instService.getInstByName(name);
+	}
 
 
 	@RequestMapping(path = "/", method = RequestMethod.POST)
