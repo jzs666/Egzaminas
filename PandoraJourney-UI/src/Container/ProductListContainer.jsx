@@ -11,11 +11,11 @@ class ProductListContainer extends Component {
   constructor(props, context) {
     super(props, context);
     this.handleDetailsClick = this.handleDetailsClick.bind(this);
-    this.state = { products: [] };
+    this.state = { productSs: [] };
   }
 
   componentDidMount() {
-    axios.get('https://itpro2017.herokuapp.com/api/products').then((response) => {
+    axios.get('/api/institucijos').then((response) => {
       this.setState({ products: response.data });
     });
   }

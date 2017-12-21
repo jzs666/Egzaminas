@@ -27,13 +27,13 @@ ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={ProductListContainer} />
-      <Route path="/products" component={ProductListContainer} />
-      <Route path="/products/:id" component={ProductDetailsContainer} />
+      <Route path="/institution-list" component={ProductListContainer} />
+      <Route path="/institution/:name" component={ProductDetailsContainer} />
       <Route path={"/cart-details"} component={CartDetailsContainer} />
       <Route path="/admin" component={Admin} >
         <IndexRoute component={ProductListAdministrationContainer} />
-        <Route path="/admin/products/new" component={ProductAdministrationContainer} />
-        <Route path="/admin/products/:productId" component={ProductAdministrationContainer} />
+        <Route path="/books/products/new" component={ProductAdministrationContainer} />
+        <Route path="/books/products/:productId" component={ProductAdministrationContainer} />
       </Route>
       <Route path="*" component={NoMatch} />
     </Route>
